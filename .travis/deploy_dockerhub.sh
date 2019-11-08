@@ -6,4 +6,4 @@ else
     TAG="$TRAVIS_BRANCH"
 fi
 docker build -t $TRAVIS_REPO_SLUG:$TAG .
-docker push $DOCKER_USER:$TAG
+docker push $DOCKER_USER/$TRAVIS_REPO_SLUG:$TAG
